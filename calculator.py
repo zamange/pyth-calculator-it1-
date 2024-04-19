@@ -8,4 +8,11 @@ def add(x, y):
 
 
 
-add (5, 7)
+def subtract(x, y):
+    result = x - y
+    print (result)
+    return result
+
+
+
+subtract(7, 5)
