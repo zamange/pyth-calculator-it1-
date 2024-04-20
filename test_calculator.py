@@ -1,5 +1,5 @@
 import unittest
-from calculator import add, subtract
+from calculator import add, subtract, multiply
 
 class TestCalculator(unittest.TestCase):
     def test_sum(self):
@@ -17,6 +17,14 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(subtract(7, -5), 12)
         self.assertRaises(TypeError, subtract, 7, "5")
 
+
+    def test_multiply(self):
+
+        self.assertEqual(multiply(7, 5), 35)
+        self.assertEqual(multiply(-7, 5), -35)
+        self.assertEqual(multiply(7, -5), -35)
+        self.assertRaises(TypeError, (multiply( 7, "5")))
+        
 
 
 

@@ -15,3 +15,10 @@ def subtract(x, y):
 
 
 
+def multiply(x, y):
+    try:
+        product = x * y
+    except TypeError:
+        return "TypeError"
+    
+    return product
