@@ -15,4 +15,3 @@ def subtract(x, y):
 
 
 
-subtract(7, 5)
