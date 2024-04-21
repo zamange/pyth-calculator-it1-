@@ -22,3 +22,9 @@ def multiply(x, y):
         return "TypeError"
     
     return product
+    
+
+
+def divide(x, y):
+    quotient = x / y
+    return quotient
