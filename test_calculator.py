@@ -32,7 +32,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(divide(-10, 5), -2)
         self.assertRaises(ZeroDivisionError, divide, 10, 0)
         self.assertRaises(TypeError, divide, "10", 5)
-        
+
 
 
 

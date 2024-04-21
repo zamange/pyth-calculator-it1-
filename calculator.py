@@ -26,5 +26,10 @@ def multiply(x, y):
 
 
 def divide(x, y):
-    quotient = x / y
-    return quotient
+    try:
+        quotient = x / y
+        return quotient
+    except ZeroDivisionError:
+        raise ZeroDivisionError("Cannot divide by zero")
+    except TypeError:
+        raise TypeError("Unsupported operand types")
